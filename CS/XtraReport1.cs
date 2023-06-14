@@ -15,7 +15,7 @@ namespace DetailReportsSum {
                 GrandTotals += Convert.ToDecimal(e.Value);
         }
 
-        private void xrlFreightGrandTotal_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+        private void xrlFreightGrandTotal_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
             xrlFreightGrandTotal.Text = string.Format("{0:c2}", GrandTotals);
         }
 

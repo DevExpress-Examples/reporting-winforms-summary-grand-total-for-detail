@@ -27,13 +27,13 @@ Namespace DetailReportsSum
 		Private Sub InitializeComponent()
 			Dim xrSummary1 As New DevExpress.XtraReports.UI.XRSummary()
 			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
-			Me.nwindDataSet1 = New DetailReportsSum.nwindDataSet()
-			Me.customersTableAdapter = New DetailReportsSum.nwindDataSetTableAdapters.CustomersTableAdapter()
+			Me.nwindDataSet1 = New nwindDataSet()
+			Me.customersTableAdapter = New nwindDataSetTableAdapters.CustomersTableAdapter()
 			Me.xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
 			Me.ReportFooter = New DevExpress.XtraReports.UI.ReportFooterBand()
 			Me.xrlFreightGrandTotal = New DevExpress.XtraReports.UI.XRLabel()
 			Me.DetailReport = New DevExpress.XtraReports.UI.DetailReportBand()
-			Me.ordersTableAdapter = New DetailReportsSum.nwindDataSetTableAdapters.OrdersTableAdapter()
+			Me.ordersTableAdapter = New nwindDataSetTableAdapters.OrdersTableAdapter()
 			Me.Detail1 = New DevExpress.XtraReports.UI.DetailBand()
 			Me.xrlFreight = New DevExpress.XtraReports.UI.XRLabel()
 			Me.xrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
@@ -62,7 +62,7 @@ Namespace DetailReportsSum
 			' xrLabel1
 			' 
 			Me.xrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.ContactName", "")})
-			Me.xrLabel1.Font = New System.Drawing.Font("Arial", 12F)
+			Me.xrLabel1.Font = New DevExpress.Drawing.DXFont("Arial", 12F)
 			Me.xrLabel1.Location = New System.Drawing.Point(8, 8)
 			Me.xrLabel1.Name = "xrLabel1"
 			Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -80,7 +80,7 @@ Namespace DetailReportsSum
 			' 
 			Me.xrlFreightGrandTotal.BackColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(255))))), (CInt(Fix((CByte(232))))), (CInt(Fix((CByte(232))))))
 			Me.xrlFreightGrandTotal.Borders = (CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
-			Me.xrlFreightGrandTotal.Font = New System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrlFreightGrandTotal.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrlFreightGrandTotal.ForeColor = System.Drawing.Color.FromArgb((CInt(Fix((CByte(128))))), (CInt(Fix((CByte(64))))), (CInt(Fix((CByte(64))))))
 			Me.xrlFreightGrandTotal.Location = New System.Drawing.Point(150, 0)
 			Me.xrlFreightGrandTotal.Name = "xrlFreightGrandTotal"
@@ -139,7 +139,7 @@ Namespace DetailReportsSum
 			' xrlFreightTotal
 			' 
 			Me.xrlFreightTotal.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Customers.CustomersOrders.Freight", "{0:c2}")})
-			Me.xrlFreightTotal.Font = New System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold)
+			Me.xrlFreightTotal.Font = New DevExpress.Drawing.DXFont("Times New Roman", 9.75F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrlFreightTotal.Location = New System.Drawing.Point(150, 0)
 			Me.xrlFreightTotal.Name = "xrlFreightTotal"
 			Me.xrlFreightTotal.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -167,7 +167,7 @@ Namespace DetailReportsSum
 
 		Private Detail As DevExpress.XtraReports.UI.DetailBand
 		Private nwindDataSet1 As nwindDataSet
-		Private customersTableAdapter As DetailReportsSum.nwindDataSetTableAdapters.CustomersTableAdapter
+		Private customersTableAdapter As nwindDataSetTableAdapters.CustomersTableAdapter
 		Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
 		Private ReportFooter As DevExpress.XtraReports.UI.ReportFooterBand
 		Private WithEvents xrlFreightGrandTotal As DevExpress.XtraReports.UI.XRLabel
@@ -177,6 +177,6 @@ Namespace DetailReportsSum
 		Private xrlFreight As DevExpress.XtraReports.UI.XRLabel
 		Private ReportFooter1 As DevExpress.XtraReports.UI.ReportFooterBand
 		Private WithEvents xrlFreightTotal As DevExpress.XtraReports.UI.XRLabel
-		Private ordersTableAdapter As DetailReportsSum.nwindDataSetTableAdapters.OrdersTableAdapter
+		Private ordersTableAdapter As nwindDataSetTableAdapters.OrdersTableAdapter
 	End Class
 End Namespace

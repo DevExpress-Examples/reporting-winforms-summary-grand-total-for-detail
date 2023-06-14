@@ -18,7 +18,7 @@ Namespace DetailReportsSum
 			End If
 		End Sub
 
-		Private Sub xrlFreightGrandTotal_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles xrlFreightGrandTotal.BeforePrint
+		Private Sub xrlFreightGrandTotal_BeforePrint(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles xrlFreightGrandTotal.BeforePrint
 			xrlFreightGrandTotal.Text = String.Format("{0:c2}", GrandTotals)
 		End Sub
 

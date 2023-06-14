@@ -62,7 +62,7 @@ namespace DetailReportsSum {
             // 
             this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.ContactName", "")});
-            this.xrLabel1.Font = new System.Drawing.Font("Arial", 12F);
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Arial", 12F);
             this.xrLabel1.Location = new System.Drawing.Point(8, 8);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -83,7 +83,7 @@ namespace DetailReportsSum {
             this.xrlFreightGrandTotal.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)
                         | DevExpress.XtraPrinting.BorderSide.Right)
                         | DevExpress.XtraPrinting.BorderSide.Bottom)));
-            this.xrlFreightGrandTotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.xrlFreightGrandTotal.Font = new DevExpress.Drawing.DXFont("Times New Roman", 12F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrlFreightGrandTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.xrlFreightGrandTotal.Location = new System.Drawing.Point(150, 0);
             this.xrlFreightGrandTotal.Name = "xrlFreightGrandTotal";
@@ -93,7 +93,7 @@ namespace DetailReportsSum {
             this.xrlFreightGrandTotal.StylePriority.UseForeColor = false;
             this.xrlFreightGrandTotal.Text = "GrandTotal";
             this.xrlFreightGrandTotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
-            this.xrlFreightGrandTotal.BeforePrint += new System.Drawing.Printing.PrintEventHandler(this.xrlFreightGrandTotal_BeforePrint);
+            this.xrlFreightGrandTotal.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.xrlFreightGrandTotal_BeforePrint);
             // 
             // DetailReport
             // 
@@ -150,7 +150,7 @@ namespace DetailReportsSum {
             // 
             this.xrlFreightTotal.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Customers.CustomersOrders.Freight", "{0:c2}")});
-            this.xrlFreightTotal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            this.xrlFreightTotal.Font = new DevExpress.Drawing.DXFont("Times New Roman", 9.75F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrlFreightTotal.Location = new System.Drawing.Point(150, 0);
             this.xrlFreightTotal.Name = "xrlFreightTotal";
             this.xrlFreightTotal.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);

@@ -1,23 +1,21 @@
-Imports Microsoft.VisualBasic
 Imports System
 Imports System.Windows.Forms
 Imports DevExpress.XtraReports.UI
+
 ' ...
-
 Namespace DetailReportsSum
-	Partial Public Class Form1
-		Inherits Form
-		Public Sub New()
-			InitializeComponent()
-		End Sub
 
-		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button1.Click
+    Public Partial Class Form1
+        Inherits Form
 
-			Dim report As New XtraReport1()
-			Dim printTool As New ReportPrintTool(report)
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-			printTool.ShowPreview()
-		End Sub
-
-	End Class
+        Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+            Dim report As XtraReport1 = New XtraReport1()
+            Dim printTool As ReportPrintTool = New ReportPrintTool(report)
+            printTool.ShowPreview()
+        End Sub
+    End Class
 End Namespace

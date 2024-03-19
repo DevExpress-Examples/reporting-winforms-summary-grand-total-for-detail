@@ -3,10 +3,6 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E633)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-*Files to look at*:
-
-
-<!-- default file list end -->
 # Reporting for WinForms - How to Calculate Grand Total for Detail Report Summaries
 
 
